@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap|Open Sans');
+
+body{
+    display: grid;
+    grid-template-columns: 22% auto;
+    padding:0;
+    margin: 0;
+}
+header{
+    grid-area:1/1/4/2;
+}
+nav{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 285%; 
+    position: fixed;
+    width:22%;
+}
+a:hover {
+	color: rgb(41, 130, 231);
+}
+#logo{
+    grid-area:1/1/2/2;
+}
+#logo img{
+    width:100%;
+}
+nav ul{
+    display: grid;
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 15%);
+    justify-items: center;
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(59, 59, 59);
+}
+.link{
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+
+nav ul li{
+    list-style:none;
+}
+nav ul li:nth-of-type(1){
+    grid-area:2/1/3/2;
+}
+nav ul li:nth-of-type(2){
+    grid-area:3/1/4/2;
+}
+nav ul li:nth-of-type(3){
+    grid-area:4/1/5/2;
+}
+nav ul li:nth-of-type(4){
+    grid-area:5/1/6/2;
+}
+nav ul li:nth-of-type(5){
+    grid-area:6/1/7/2;
+}
+main{
+    /* text-align: center; */
+    font-family: 'Open Sans', sans-serif;
+}
+.main-projects{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content 1fr 1fr 1fr;
+    padding:5%;
+    background-size:cover;
+    background-image: url(https://cdn.glitch.me/a8b4803e-5eab-435f-99ec-d05961c32341%2Fbackground2.jpg?v=1637808804097);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+#title-projects{
+    grid-area:1/1/2/3;
+    color:#fff;
+    font-size:20px;
+}
+.project-img img{
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 1px rgb(26, 26, 26);
+    width: 80%;
+}
+.project-img:hover img {
+    transform:scale(1.10);
+}
+.project-description h2, h3{
+    color: #fff;
+}
+.project-description{
+    /* background:#fff; */
+    width: 80%;
+    text-align: justify;
+}
+.project-description button{
+    margin-left: 35%;
+    /* text-align: center; */
+    /* width: 30%; */
+}
+
+.skills-icons img:hover img{
+    transform:scale(1.10);
+}
+
+footer{
+    grid-area:4/2/5/3;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer a{
+    /* text-decoration: none; */
+    color: white;
+}
